@@ -1,0 +1,27 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/kamesh/ros2_ws/build/lasttest",
+        "/home/kamesh/ros2_ws/install/lasttest/lib/python3.10/site-packages",
+        "/home/kamesh/ros2_ws/install/gesture_control/lib/python3.10/site-packages",
+        "/home/kamesh/ros2_ws/build/fleet_manager",
+        "/home/kamesh/ros2_ws/install/fleet_manager/lib/python3.10/site-packages",
+        "/home/kamesh/install/turtle_rviz/lib/python3.10/site-packages",
+        "/home/kamesh/install/robot_navigation/lib/python3.10/site-packages",
+        "/home/kamesh/install/graph_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/kamesh/ros2_ws/build/lasttest",
+        "/home/kamesh/ros2_ws/install/lasttest/lib/python3.10/site-packages",
+        "/home/kamesh/ros2_ws/install/gesture_control/lib/python3.10/site-packages",
+        "/home/kamesh/ros2_ws/build/fleet_manager",
+        "/home/kamesh/ros2_ws/install/fleet_manager/lib/python3.10/site-packages",
+        "/home/kamesh/install/turtle_rviz/lib/python3.10/site-packages",
+        "/home/kamesh/install/robot_navigation/lib/python3.10/site-packages",
+        "/home/kamesh/install/graph_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "ros.distro": "humble"
+}

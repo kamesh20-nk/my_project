@@ -1,0 +1,29 @@
+name: ROS 2 CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up ROS 2
+        uses: ros-tooling/setup-ros@v0.2
+        with:
+          required-ros-distributions: humble
+
+      - name: Build ROS 2 package
+        run: |
+          sudo apt update
+          sudo apt install -y python3-colcon-common-extensions
+          colcon build --packages-select sdfjkhnd_pkg
+          source install/setup.bash
+
+      - name: Run tests
+        run: |
+          colcon test --packages-select sdfjkhnd_pkg
+          colcon test-result --verbose
